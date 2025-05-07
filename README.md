@@ -12,7 +12,7 @@
 
 ## 2. Criando as Sub-redes
 1. No menu lateral do VPC, vá até Sub-redes e clique em Criar Sub-rede 
-2. Configure ss seguintes parâmetros:
+2. Configure os seguintes parâmetros:
 * ID da VPC: Selecione a VPC recém-criada (``vpc-wordpress``).
 * Nome da sub-rede : `subnet-publica-1`.
 * Zona de disponibilidade : `us-east-1a`.
@@ -166,7 +166,7 @@ Em destino de montagem:
 2. Clique em executar intâncias.
 3. Configure os seguintes parametros:
 * Nome: `Nome de sua escolha`.
-* Imagem do Sistema Operacional (AMI: `Amazon Linux`(ou outra de sua escolha).
+* Imagem do Sistema Operacional AMI: `Amazon Linux`(ou outra de sua escolha).
 * Adicione um par de chaves, caso não tiver, clique em criar par de chaves.
 * VPC: `vpc-wordpress`.
 * Sub-rede: `subnet-privada-1`.
@@ -224,6 +224,7 @@ docker-compose up -d
 7. Selecione a sua intância recém criada e clique em conectar.
 8. Em gerenciador de sessões, clique em conectar.
 9. No terminal, coloque os seguintes comandos:
+
 ```
 sudo su
 cd /
@@ -257,4 +258,4 @@ SHOW DATABASES;
 * Limite íntegro: `2`
 * Adicionar sua intância.
 6. Criar load balancer
-7. Depois abra seu navegador e coloque o caminho e logo em seguida irá aparecer a tela do wordpress:
+7. Depois abra seu navegador e coloque o caminho e logo em seguida irá aparecer a tela do Wordpress.
